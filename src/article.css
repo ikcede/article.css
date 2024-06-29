@@ -1,9 +1,11 @@
-/** Styling for article container */
+/** Sample styling for article container */
+/*
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+*/
 
 article {
   /******************************************/
@@ -38,8 +40,9 @@ article {
   flex-direction: column;
   align-self: center;
 
-  margin: 0;
-  padding: var(--grid);
+  box-sizing: border-box;
+  margin: var(--grid) calc(var(--grid) * 3) calc(var(--grid) * 3);
+  padding: 0;
   max-width: var(--container-width);
 
   font-family: var(--text-font-family);
