@@ -43,6 +43,7 @@ article {
   box-sizing: border-box;
   margin: var(--grid) calc(var(--grid) * 3) calc(var(--grid) * 3);
   padding: 0;
+  width: 100%;
   max-width: var(--container-width);
 
   font-family: var(--text-font-family);
@@ -56,6 +57,7 @@ article {
     font-weight: 700;
     color: var(--text-primary-color);
     letter-spacing: 0.2px;
+    line-height: 100%;
 
     margin: calc(var(--grid) * 3) 0 var(--grid) 0;
     padding: 0;
