@@ -101,6 +101,7 @@ article {
     
     li {
       margin: var(--grid) 0;
+      line-height: var(--text-line-height);
     }
   }
 
