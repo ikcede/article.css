@@ -118,6 +118,7 @@ article {
 
   blockquote {
     font-style: italic;
+    line-height: var(--text-line-height);
     border-left: 4px solid var(--text-primary-color);
     margin: calc(var(--grid) * 2) 0;
     padding: 
