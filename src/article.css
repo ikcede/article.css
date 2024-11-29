@@ -19,7 +19,8 @@ article {
   --heading-font-family: "Lato", sans-serif;
 
   --h1-font-size: 40px;
-  --h2-font-size: 24px;
+  --h2-font-size: 28px;
+  --h3-font-size: 24px;
   --text-font-size: 20px;
   --code-font-size: 18px;
 
@@ -63,11 +64,23 @@ article {
     margin: calc(var(--grid) * 3) 0 var(--grid) 0;
     padding: 0;
   }
-  
+
   h2 {
     font-family: var(--heading-font-family);
     font-size: var(--h2-font-size);
     font-weight: 700;
+    color: var(--text-primary-color);
+    letter-spacing: 0.1px;
+    line-height: 1.2em;
+
+    margin: calc(var(--grid) * 3) 0 var(--grid) 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-family: var(--heading-font-family);
+    font-size: var(--h3-font-size);
+    font-weight: 500;
     color: var(--text-primary-color);
     letter-spacing: 0.1px;
     line-height: 1.2em;
@@ -94,11 +107,12 @@ article {
     text-decoration: underline;
   }
 
-  ul, ol {
+  ul,
+  ol {
     display: flex;
     flex-flow: column;
     margin: var(--grid) 0;
-    
+
     li {
       margin: var(--grid) 0;
       line-height: var(--text-line-height);
@@ -112,7 +126,8 @@ article {
     padding: 0;
   }
 
-  mark, .highlight {
+  mark,
+  .highlight {
     background: var(--text-highlight-color);
   }
 
@@ -121,11 +136,8 @@ article {
     line-height: var(--text-line-height);
     border-left: 4px solid var(--text-primary-color);
     margin: calc(var(--grid) * 2) 0;
-    padding: 
-        calc(var(--grid) / 2)
-        0
-        calc(var(--grid) / 2)
-        calc(var(--grid) * 1.5);
+    padding: calc(var(--grid) / 2) 0 calc(var(--grid) / 2)
+      calc(var(--grid) * 1.5);
   }
 
   blockquote.large {
