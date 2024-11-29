@@ -21,7 +21,8 @@ article {
   --h1-font-size: 40px;
   --h2-font-size: 28px;
   --h3-font-size: 24px;
-  --text-font-size: 20px;
+  --text-font-size-default: 20px;
+  --text-font-size-small: 18px;
   --code-font-size: 18px;
 
   --text-line-height: 1.56em;
@@ -49,7 +50,7 @@ article {
   max-width: var(--container-width);
 
   font-family: var(--text-font-family);
-  font-size: var(--text-font-size);
+  font-size: var(--text-font-size-default);
   color: var(--text-primary-color);
   text-align: left;
 
@@ -124,6 +125,25 @@ article {
     height: auto;
     margin: calc(var(--grid) * 2) 0;
     padding: 0;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    margin: calc(var(--grid) * 2) 0;
+    padding: 0;
+    gap: var(--grid);
+    text-align: center;
+
+    img {
+      margin: 0;
+    }
+  }
+
+  figcaption {
+    font-size: var(--text-font-size-small);
+    font-style: italic;
+    color: var(--text-secondary-color);
   }
 
   mark,

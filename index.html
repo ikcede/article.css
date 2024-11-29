@@ -1,19 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👓</text></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👓</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Article.css Demo</title>
 
-    <link rel="stylesheet" href="src/article.css">
+    <link rel="stylesheet" href="src/article.css" />
     <style>
-      html, body {
+      html,
+      body {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -34,97 +41,96 @@
         <h1>Article.css Demo</h1>
 
         <div class="subtitle">Use a .subtitle class for subtitles!</div>
-        
+
         <p>
-          Hey there! Thanks for checking out this CSS style template!
-          I created this because I wanted a quick, configurable starter
-          set of styles for any page with a larger amount of written
-          content.
+          Hey there! Thanks for checking out this CSS style template! I created
+          this because I wanted a quick, configurable starter set of styles for
+          any page with a larger amount of written content.
         </p>
         <p>
-          If the styling looks familiar, that's because 
-          <mark>Article.css</mark> was inspired by the excellent reading 
+          If the styling looks familiar, that's because
+          <mark>Article.css</mark> was inspired by the excellent reading
           experience over at <a href="https://medium.com/">Medium</a>.
         </p>
 
         <h2>Basic Features</h2>
 
-        <p>
-          Some of the basic supported features include:
-        </p>
+        <p>Some of the basic supported features include:</p>
         <ul>
-          <li>
-            Small code snippets with the <code>&lt;code&gt;</code> tag
-          </li>
+          <li>Small code snippets with the <code>&lt;code&gt;</code> tag</li>
           <li>
             <mark>Highlighting</mark> with <code>&lt;mark&gt;</code> or
             <code>.highlight</code>
           </li>
-          <li>
-            <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> headers
-          </li>
-          <li>
-            <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> styling
-          </li>
+          <li><code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> headers</li>
+          <li><code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> styling</li>
         </ul>
 
         <h2>Quotes</h2>
 
         <blockquote>This is a default blockquote</blockquote>
         <p>
-          You can give it a <code>.large</code> class for a
-          bigger blockquote:
+          You can give it a <code>.large</code> class for a bigger blockquote:
         </p>
         <blockquote class="large">
-          “If there's a book that you want to read, 
-          but it hasn't been written yet, then you must write it.”
-          ― Toni Morrison
+          “If there's a book that you want to read, but it hasn't been written
+          yet, then you must write it.” ― Toni Morrison
         </blockquote>
 
-        <h2>
-          Images
-        </h2>
+        <h2>Images</h2>
 
         <p>
-          Images are set to <code>width: 100%;</code> by default.
-          Here's a sample by 
-          <a href="https://commons.wikimedia.org/wiki/File:Sunset_in_The_Trossachs,_Scotland.jpg">Michal Klajban</a>,
-          <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>,
-          via Wikimedia Commons:
+          Images are set to <code>width: 100%;</code> by default. Here's a
+          sample by
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Sunset_in_The_Trossachs,_Scotland.jpg"
+            >Michal Klajban</a
+          >,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0"
+            >CC BY-SA 4.0</a
+          >, via Wikimedia Commons:
         </p>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Sunset_in_The_Trossachs%2C_Scotland.jpg"
-             alt="Sunset in The Trossachs, Scotland"/>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Sunset_in_The_Trossachs%2C_Scotland.jpg"
+            alt="Sunset in The Trossachs, Scotland"
+          />
+          <figcaption>Sunset in The Trossachs, Scotland</figcaption>
+        </figure>
 
         <h2>Design System</h2>
 
-        <p><strong>The Grid System</strong></p>
+        <h3>The Grid System</h3>
         <p>
-          Article.css is built around the <code>8px</code> grid system,
-          which is set as an editable variable <code>--grid</code>.
+          Article.css is built around the <code>8px</code> grid system, which is
+          set as an editable variable <code>--grid</code>.
         </p>
-        <p><strong>Typography</strong></p>
+        <h3>Typography</h3>
         <p>
-          The base serif font used is 
-          <a href="https://fonts.google.com/specimen/Lora">Lora</a>,
-          and the base serif is 
-          <a href="https://fonts.google.com/specimen/Lato">Lato</a>.
-          Both fonts are freely available on Google Fonts.
+          The base serif font used is
+          <a href="https://fonts.google.com/specimen/Lora">Lora</a>, and the
+          base serif is
+          <a href="https://fonts.google.com/specimen/Lato">Lato</a>. Both fonts
+          are freely available on Google Fonts.
         </p>
-        <p><strong>Color</strong></p>
+        <h3>Color</h3>
         <p>
-          Article.css uses a solid primary black color of 
-          <code>#121212</code> for ease of reading on a pure white
-          background.
+          Article.css uses a solid primary black color of
+          <code>#121212</code> for ease of reading on a pure white background.
         </p>
         <p>
           The secondary grey <code>#767676</code> and background grey
-          <code>#e0e0e0</code> are selected to ensure a high level
-          of contrast for accessibility.
+          <code>#e0e0e0</code> are selected to ensure a high level of contrast
+          for accessibility.
+        </p>
+
+        <p>
+          <strong>Highlights</strong>
         </p>
         <p>
-          Finally, the highlight color can be configured to a color
-          of your preference. 
+          Finally, the highlight color can be configured to a color of your
+          preference.
         </p>
       </article>
     </main>
